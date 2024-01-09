@@ -1,0 +1,22 @@
+section{
+    color: antiquewhite;
+    background-color: turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.next{
+    position: absolute;
+    right: 20px;
+    top: calc(50vh-25px);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(247, 203, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
