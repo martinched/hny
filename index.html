@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
-    <script src="./js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <span class="next"><img src="./images/icon_plus.svg"></span>
+    <span class="play" onclick="start()"><img class="playsvg" src="./images/play.svg"></span>
     
-    <section class="step1">      
-        <h2>step1</h2>
+    <section class="step1" id="step1">      
+        <div class="step_inner">
+            <h2 id="firsth2">Salut toi!...</h2>
+            <p id="firstp">Ça fait combien de temps que l'on ne c'est pas vu?<br>Bien trop longtemps non?</p>
+        </div>
     </section>
 
     <section class="step2">
-        <h2>step2</h2>
+        <div class="step_inner">
+            <h2 id="secondh2">En fait,</h2>
+            <p id="secondp">Je suis rentré en formation développement web...<br>(J'en avais marre d'être un lapin de trois semaines sur la toile; et marre aussi de risquer ma santé à bucheronner pour un smic)<br> Alors quand on nous a demander de faire une carte de voeux , j'ai tout de suite pensé a toi!</p>
+        </div>
     </section>
 
-    <section class="step3">      
-        <h2>step3</h2>
+    <section class="step3">  
+        <div class="step_inner">
+            <h2>J'éspère que:</h2>
+            <p>Tu as pris de vraies bonnes résolutions pour cette nouvelle année!<br>Genre: évidement! arrêter de fumer; faire plus de vélo pour la planete et ton corps divin; méditer AVANT de t'énerver!... (Peut être aussi acheter du Bitcoin, qui sait?)... </p>
+        </div>
+        <div>
+            <img src="./images/arretfume/images (2).jfif" alt="noeud clope">
+            <img src="./images/arretfume/images (5).jfif" alt="yoga vénèr">
+            <img src="./images/arretfume/téléchargement (3).jfif" alt="la position du lion">
+            <img src="./images/arretfume/téléchargement (1).jfif" alt="">
+        </div>
     </section>
 
-    <section class="step4">      
-        <h2>step4</h2>
+    <section class="step4"> 
+        <div class="step_inner">  
+            <h2>Perso</h2>
+                <p>J'ai décidé de reduire ma consommation de viande et d'alcool..<br>rassurs toi c'est seulement pour pouvoir me permetre de n'acheter plus que des fruits et légumes bio!</p>
+        </div>
+        <div>
+            
+        </div>
     </section>
 
-    <section class="step5">      
-        <h2>step5</h2>
+    <section class="step5">  
+        <div class="step_inner"> 
+            <h2>Enfin,</h2>
+            <p>..Je te souhaite, à toi et aux tien.ne.s, le meilleur pour 2024!</p>
+        </div>   
     </section>
 
 </body>

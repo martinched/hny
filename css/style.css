@@ -1,17 +1,9 @@
-section{
-    color: antiquewhite;
-    background-color: turquoise;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
 
-.next{
+
+.play{
     position: fixed;
-    right: 20px;
-    top: calc(50vh-25px);
+    right: 25px;
+    top: calc(50vh - 25px);
     width: 50px;
     height: 50px;
     background-color: rgb(247, 203, 10);
@@ -19,17 +11,118 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 100%;
+    z-index: 99;
+    cursor: pointer;
 }
 
-.next img{
+.playsvg {
     width: 50%;
     height: 50%;
+    position: relative;
+    right: -2px;
 }
+
+
+
+section{
+    font-family: 'Mountains of Christmas', serif;
+    color: antiquewhite;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw);
+    height: 100vh;
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 70px;
+    
+}
+
+.step1 h2{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
+}
+
+.step1 p{
+    opacity: 0;
+    position: relative;
+    transition: all 3s;
+    bottom: -30px;
+   
+}
+
+section:before{
+    content: "";   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-position: center center;
+    opacity: 0.8;
+    background: cover;   
+    background-repeat: no-repeat;
+}
+
+
+.step_inner{
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+   
+}
+
+/*___________________________________________S_1_______________________________________*/
 
 .step1{
-    background-color: darkred;
+    position: relative;
+    opacity: 0;
+    transition: all 2s;
 }
 
-.step2{
-    background-color: darkgreen;
+.step1:before{
+    background-image:url(../images/hiver/premiereneige.jpg);   
 }
+
+/*_______________________________________________________________________________________
+_____________________________________________S_2________________________________________*/
+
+.step2:before{
+    background-image: url(../images/hiver/neige.jpg);
+    font-size: 50px;  
+}
+
+
+/*________________________________________________________________________________________
+_____________________________________________S_3__________________________________________*/
+
+.step4:before{
+    background-image: url(../images/hiver/sherpa.jpg);
+}
+
+/*________________________________________________________________________________________
+_____________________________________________S_4__________________________________________*/
+
+
+/*________________________________________________________________________________________
+_____________________________________________S_5__________________________________________*/
+
+.step5:before{
+    background-image: url(/images/bonneannee/téléchargement.png);
+}
+
+/*________________________________________________________________________________________
+_____________________________________________anim_________________________________________
+
+.step2, .step3, .step4, .step5{
+    display: none;
+}
+
