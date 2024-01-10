@@ -35,7 +35,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100vw);
+    width: 100vw;
     height: 100vh;
     color: whitesmoke;
     font-size: 50px;
@@ -66,10 +66,11 @@ section:before{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-size: contain;
+    left: 0;
+    top: 0;
+    background-size: content;
     background-position: center center;
-    opacity: 0.8;
-    background: cover;   
+    opacity: 0.8;  
     background-repeat: no-repeat;
 }
 
@@ -106,7 +107,7 @@ _____________________________________________S_2________________________________
     background-image: url(../images/hiver/neige.jpg);    
 }
 
-.step1{
+.step2{
     position: relative;
     opacity: 0;
     transition: all 2s;
@@ -129,13 +130,24 @@ _____________________________________________S_2________________________________
 /*________________________________________________________________________________________
 _____________________________________________S_3__________________________________________*/
 
-.step3:before{
-    background-image: url(../images/hiver/sherpa.jpg);
+#thirdcontent{
+    display: flex;
+    flex-direction: row;
 }
-.step1{
+
+.d{
+    right: 10px;
+    top: 10px;
+}
+.g{
+    left: 10px;
+}
+
+.step3{
     position: relative;
     opacity: 0;
     transition: all 2s;
+    font-size: 30px;
 }
 .step3 h2{
     opacity: 0;
@@ -154,9 +166,12 @@ _____________________________________________S_3________________________________
 _____________________________________________S_4__________________________________________*/
 
 .step4:before{
-    background-image: url(../images/arretfume/nofumemorefruits.jfif)
+    background-image: url(../images/arretfume/nofumemorefruits.jfif);
+    position:relative;
+    bottom: 50px;
+    left: 50px;
 }
-.step1{
+.step4{
     position: relative;
     opacity: 0;
     transition: all 2s;
@@ -177,10 +192,7 @@ _____________________________________________S_4________________________________
 /*________________________________________________________________________________________
 _____________________________________________S_5__________________________________________*/
 
-.step5:before{
-    background-image: url(./images/bonneannee/fear.png);
-}
-.step1{
+.step5{
     position: relative;
     opacity: 0;
     transition: all 2s;
@@ -201,7 +213,7 @@ _____________________________________________S_5________________________________
 /*________________________________________________________________________________________
 _____________________________________________anim________________________________________
 
-.step2, .step3, .step4, .step5{
+ .step2, .step3, .step4, .step5{
     display:none;
 }
 
