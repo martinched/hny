@@ -1,4 +1,6 @@
 
+/*_______________________________________________________________________________________
+_____________________________________________bouton________________________________________*/
 
 .play{
     position: fixed;
@@ -22,6 +24,8 @@
     right: -2px;
 }
 
+/*_______________________________________________________________________________________
+_____________________________________________Section________________________________________*/
 
 
 section{
@@ -38,25 +42,24 @@ section{
     text-align: center;
 }
 
+.step_inner{
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;  
+}
+
 h2{
-    font-size: 70px;
-    
+    font-size: 70px;   
 }
 
-.step1 h2{
-    opacity: 0;
-    position: relative;
-    top: -30px;
-    transition: all 1s;
+p{
+  font-size: 50px;  
 }
 
-.step1 p{
-    opacity: 0;
-    position: relative;
-    transition: all 3s;
-    bottom: -30px;
-   
-}
+ /*_______________________________________________________________________________________
+_____________________________________________before________________________________________*/
 
 section:before{
     content: "";   
@@ -71,16 +74,11 @@ section:before{
 }
 
 
-.step_inner{
-    position: relative;
-    width:100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-   
-}
-
 /*___________________________________________S_1_______________________________________*/
+
+.step1:before{
+    background-image:url(../images/hiver/premiereneige.jpg);   
+}
 
 .step1{
     position: relative;
@@ -88,41 +86,122 @@ section:before{
     transition: all 2s;
 }
 
-.step1:before{
-    background-image:url(../images/hiver/premiereneige.jpg);   
+.step1 h2{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
 }
 
+.step1 p{
+    opacity: 0;
+    position: relative;
+    transition: all 3s;
+    bottom: -30px; 
+}
 /*_______________________________________________________________________________________
 _____________________________________________S_2________________________________________*/
 
 .step2:before{
-    background-image: url(../images/hiver/neige.jpg);
-    font-size: 50px;  
+    background-image: url(../images/hiver/neige.jpg);    
 }
 
+.step1{
+    position: relative;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.step2 h2{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
+}
+
+.step2 p{
+    opacity: 0;
+    position: relative;
+    transition: all 3s;
+    bottom: -30px; 
+}
 
 /*________________________________________________________________________________________
 _____________________________________________S_3__________________________________________*/
 
-.step4:before{
+.step3:before{
     background-image: url(../images/hiver/sherpa.jpg);
 }
+.step1{
+    position: relative;
+    opacity: 0;
+    transition: all 2s;
+}
+.step3 h2{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
+}
 
+.step3 p{
+    opacity: 0;
+    position: relative;
+    transition: all 3s;
+    bottom: -30px; 
+}
 /*________________________________________________________________________________________
 _____________________________________________S_4__________________________________________*/
 
+.step4:before{
+    background-image: url(../images/arretfume/nofumemorefruits.jfif)
+}
+.step1{
+    position: relative;
+    opacity: 0;
+    transition: all 2s;
+}
+.step4 h2{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
+}
 
+.step4 p{
+    opacity: 0;
+    position: relative;
+    transition: all 3s;
+    bottom: -30px; 
+}
 /*________________________________________________________________________________________
 _____________________________________________S_5__________________________________________*/
 
 .step5:before{
-    background-image: url(/images/bonneannee/téléchargement.png);
+    background-image: url(./images/bonneannee/fear.png);
+}
+.step1{
+    position: relative;
+    opacity: 0;
+    transition: all 2s;
+}
+.step5 h2{
+    opacity: 0;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
 }
 
+.step5 p{
+    opacity: 0;
+    position: relative;
+    transition: all 3s;
+    bottom: -30px; 
+}
 /*________________________________________________________________________________________
-_____________________________________________anim_________________________________________
+_____________________________________________anim________________________________________
 
 .step2, .step3, .step4, .step5{
-    display: none;
+    display:none;
 }
 
